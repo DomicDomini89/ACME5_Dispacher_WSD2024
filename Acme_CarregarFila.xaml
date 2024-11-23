@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>959,690</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>653,690</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Acme_CarregarFila_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -68,13 +68,12 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Workflows: Acme_CarregarFila&#xD;&#xA;Descrição: Adicionar todos os WIIDs a uma fila do orquestrador preexistente&#xD;&#xA;Condição prévia: N/A&#xD;&#xA;Pós-condição: Adicionados todos os WIIDs a uma fila do orquestrador pré-existente&#xD;&#xA;Argumentos: &quot;in_dtWIIDs: DataTable&#xA;in_StrQueue: String&quot;&#xD;&#xA;" DisplayName="Acme_CarregarFila" sap:VirtualizedContainerService.HintSize="416,625" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Workflows: Acme_CarregarFila&#xA;Descrição: Adicionar todos os WIIDs a uma fila do orquestrador preexistente&#xA;Condição prévia: N/A&#xA;Pós-condição: Adicionados todos os WIIDs a uma fila do orquestrador pré-existente&#xA;Argumentos: &quot;in_dtWIIDs: DataTable&#xA;in_StrQueue: String&quot;&#xA;" DisplayName="Acme_CarregarFila" sap:VirtualizedContainerService.HintSize="416,625" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -82,7 +81,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="368,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Carregando fila -Inicio &quot;]" />
-    <ui:BulkAddQueueItems TimeoutMS="{x:Null}" DisplayName="Bulk Add Queue Items" sap:VirtualizedContainerService.HintSize="368,133" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_1" QueueItemsDataTable="[in_dtWIIDs]" QueueName="[in_StrQueue]" />
+    <ui:BulkAddQueueItems ContinueOnError="{x:Null}" DisplayName="Bulk Add Queue Items" FolderPath="{x:Null}" sap:VirtualizedContainerService.HintSize="368,133" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_1" QueueItemsDataTable="[in_dtWIIDs]" QueueName="[in_StrQueue]" Result="{x:Null}" TimeoutMS="{x:Null}" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="368,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Carregando FilA-FIM&quot;]" />
   </Sequence>
 </Activity>
